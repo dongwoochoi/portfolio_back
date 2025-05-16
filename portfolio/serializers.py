@@ -4,4 +4,4 @@ from .models import Post
 class PostSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
-        fields = ['id', 'writer', 'content', 'created_at']
+        fields = '__all__'  # 또는 ['id', 'writer', 'content', 'created_at'] 등 명시

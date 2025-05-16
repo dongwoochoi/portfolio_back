@@ -1,6 +1,6 @@
 from django.db import models
 class Post(models.Model):
-    writer = models.TextField(max_length=100)
+        writer = models.CharField(max_length=100)
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
 
