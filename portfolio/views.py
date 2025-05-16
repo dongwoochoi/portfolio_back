@@ -15,8 +15,13 @@ def create_post(request):
 
 @api_view(['GET'])
 def post_list(request):
-    posts = Post.objects.all().order_by('-created_at')
-    serializer = PostSerializer(posts, many=True)
+    try: 
+        posts = Post.objects.all().order_by('-created_at')
+        serializer = PostSerializer(posts, many=True)
+        return Response(serializer.data)
+    except Exception as e:
+        print(e)
+
     return Response(serializer.data)
 
 # Create your views here.

@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--2!7zdp4$p9j06zud#3n8#$=cs+!#ko(4jq$gj1c3l^15956%c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["http://localhost:3000/",]
+ALLOWED_HOSTS = ["*",]
 
 
 # Application definition
@@ -73,11 +73,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # React 개발 서버
-    "https://your-frontend.netlify.app",  # 배포된 프론트 (선택)
-]
-
+# CORS_ALLOWED_ORIGINS = [
+#     "*"
+# ]
+CORS_ALLOW_ALL_ORIGINS = True
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
