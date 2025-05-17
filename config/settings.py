@@ -79,8 +79,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000/",
-    "https://your-frontend.netlify.app",  # 배포된 프론트 (선택)
+    "http://localhost:3000",
+    "https://your-frontend.netlify.app",
 ]
 
 # Database
