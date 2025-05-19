@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 9,  # 한 페이지당 게시글 수
+    'PAGE_SIZE': 9, 
 }
 
 MIDDLEWARE = [
@@ -80,7 +80,8 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://your-frontend.netlify.app",
+    "https://dongwoospf.netlify.app",
+    "http://192.168.0.137:3000"
 ]
 
 # Database
